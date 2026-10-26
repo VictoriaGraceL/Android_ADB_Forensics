@@ -1,0 +1,12 @@
+# Local OS and editor files
+.DS_Store
+Thumbs.db
+~$*.docx
+*.tmp
+
+# Do not commit ADB authorization keys or local secrets
+.adb/
+.android/
+adbkey*
+.env
+.env.*

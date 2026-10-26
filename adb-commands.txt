@@ -1,0 +1,16 @@
+# Run commands individually in the Ubuntu terminal.
+# Install packages first; sudo may prompt for the Ubuntu account password.
+sudo apt update
+sudo apt install android-sdk-platform-tools-common
+sudo apt install adb
+
+# Check USB detection and ADB authorization.
+lsusb
+adb devices
+
+# Assignment collection commands.
+adb shell getprop
+adb shell pm list packages -f
+adb shell dumpsys usagestats
+adb shell dumpsys batterystats
+adb shell settings list system
